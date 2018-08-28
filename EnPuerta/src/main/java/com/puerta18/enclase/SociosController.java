@@ -67,9 +67,9 @@ public class SociosController {
 
 	@GetMapping("/socios/nuevo") // formulario de alta vacio
 
-	public String nuevo(Model template) {
+	public String nuevo() {
 		
-			
+				
 		return "login";
 
 	}
