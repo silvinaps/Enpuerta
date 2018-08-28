@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+    <title>Puerta 18</title>
+    <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Material Design Bootstrap -->
+    <link href="/css/mdb.min.css" rel="stylesheet"/>
+    <!-- Your custom styles (optional) -->
+    <link href="/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="/fa/css/fontawesome.css"/>
+    <link rel="stylesheet" type="text/css" href="/fa/css/fa-brands.css"/>
+    <link rel="stylesheet" type="text/css" href="/fa/css/fa-regular.css"/>
+    <link rel="stylesheet" type="text/css" href="/fa/css/fa-solid.css"/>
+    <script type="text/javascript" src="wow/wow.js"></script>
+     <style type="text/css">
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+    </style>
+
+    </head>
+    
+        <body>
+        
+        
+ 	<h1>Listado Completo de Socio</h1>
+ 	
+	 
+
+ 	<div class="card" th:each="socio:${socios}">
+ 	  <span th:text="${socio.name}"></span>
+ 	  <span th:text="${socio.surname}"></span>
+ 	  <span th:text="${socio.emai}"></span>
+ 	  <span th:text="${socio.dni}"></span>
+ 	</div>
+ 	
+	
+ 	
+ </body>
+ <a href ="/socios/listado" >volver</a>
+ 
+</html>
